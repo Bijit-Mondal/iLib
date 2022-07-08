@@ -1,5 +1,5 @@
 # iLib  
-### A Open Source Library Management Project For Ramakrishna Mission Vivekananda Centery College
+### A Open Source Library Management Project For Ramakrishna Mission Vivekananda Centenery College
 
 ## Project setup
 ```
