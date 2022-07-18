@@ -8,7 +8,7 @@ import './registerServiceWorker'
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
-
+require('dotenv').config();
 
 Vue.use(Vuesax,{
   colors:{
@@ -19,13 +19,13 @@ Vue.use(Vuesax,{
 Vue.config.productionTip = false
 
 var firebaseConfig = {
-  apiKey: "AIzaSyA8Wgi7RyYd9voBgAmksC2j9bRX_bp02tA",
-  authDomain: "library-test-9432.firebaseapp.com",
-  projectId: "library-test-9432",
-  storageBucket: "library-test-9432.appspot.com",
-  messagingSenderId: "684994442881",
-  appId: "1:684994442881:web:7e8ab21c6902cc8483bf80",
-  measurementId: "G-52X3Z3VTZQ"
+  apiKey: process.env.VUE_APP_API_KEY,
+  authDomain: process.env.VUE_APP_AUTH_DOMAIN,
+  projectId: process.env.VUE_APP_PROJECT_ID,
+  storageBucket: process.env.VUE_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.VUE_APP_MESSAGING_SENDER_ID,
+  appId: process.env.VUE_APP_APPID,
+  measurementId: process.env.VUE_APP_measurementId
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

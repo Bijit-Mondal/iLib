@@ -4,7 +4,6 @@ const admin = require('firebase-admin');
 
 admin.initializeApp();
 
-const env = functions.config();
 
 const algoliasearch = require('algoliasearch');
 
